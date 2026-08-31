@@ -44,45 +44,23 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: -0.04em;
 }
 
-.logo-icon {
-    position: relative;
-    width: 42px;
-    height: 30px;
-}
-
-.diamond {
-    position: absolute;
-    top: 4px;
-    width: 22px;
-    height: 22px;
-    background: #100934;
-    border-radius: 5px;
-    transform: rotate(45deg);
-}
-
-.diamond.left {
-    left: 0;
-}
-
-.diamond.right {
-    right: 0;
+.logo-img {
+    width: 90px;
+    height: auto;
+    display: block;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
 }
 
 .menu span {
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     border: 2px solid #7452ff;
     border-radius: 50%;
 }
