@@ -1,4 +1,4 @@
-const CACHE_NAME = "studentbevis-v2";
+const CACHE_NAME = "studentbevis-v3";
 
 const filesToCache = [
     "./",

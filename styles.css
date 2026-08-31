@@ -33,35 +33,54 @@ body {
 --------------------- */
 
 .header {
-    padding: calc(env(safe-area-inset-top) + 10px) 26px 14px;
+    padding:
+        calc(env(safe-area-inset-top) + 2px)
+        26px
+        8px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     background: #efebff;
+
     border-bottom: 3px solid #7452ff;
 }
+
+
+/* SIKT LOGO */
 
 .logo {
     display: flex;
     align-items: center;
+    line-height: 0;
 }
 
+
 .logo-img {
-    width: 90px;
-    height: auto;
+    height: 32px;
+    width: auto;
+
     display: block;
+    object-fit: contain;
 }
+
+
+/* THREE DOT MENU */
 
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
 }
+
 
 .menu span {
     width: 7px;
     height: 7px;
+
     border: 2px solid #7452ff;
+
     border-radius: 50%;
 }
 
