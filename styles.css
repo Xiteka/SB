@@ -2,22 +2,18 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     margin: 0;
     padding: 0;
-
-    font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Arial,
-        sans-serif;
-
     background: #efebff;
-
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Arial, sans-serif;
     color: #100934;
 }
 
+body {
+    background: #dcdcdc;
+}
 
 /* --------------------
    MOBILE APP
@@ -26,219 +22,149 @@ body {
 .app {
     width: 100%;
     max-width: 430px;
-
     min-height: 100vh;
-
-    margin: auto;
-
-    background: #fafafa;
+    margin: 0 auto;
+    background: #f3f3f3;
+    overflow: hidden;
 }
-
 
 /* --------------------
    HEADER
 --------------------- */
-.header {
-    padding:
-        calc(env(safe-area-inset-top) + 3px)
-        28px
-        8px;
 
+.header {
+    padding: calc(env(safe-area-inset-top) + 10px) 26px 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background: #efebff;
-
-    border-bottom: 3px solid #714cff;
+    border-bottom: 3px solid #7452ff;
 }
-
 
 .logo {
     display: flex;
-
     align-items: center;
-
-    gap: 14px;
-
-    font-size: 35px;
-
-    letter-spacing: -2px;
+    gap: 12px;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
 }
-
 
 .logo-icon {
     position: relative;
-
     width: 42px;
-
-    height: 35px;
+    height: 30px;
 }
-
 
 .diamond {
     position: absolute;
-
-    width: 25px;
-
-    height: 25px;
-
-    top: 5px;
-
+    top: 4px;
+    width: 22px;
+    height: 22px;
     background: #100934;
-
-    transform: rotate(45deg);
-
     border-radius: 5px;
+    transform: rotate(45deg);
 }
-
 
 .diamond.left {
-    left: 1px;
+    left: 0;
 }
-
 
 .diamond.right {
-    right: 1px;
+    right: 0;
 }
-
-
-/* --------------------
-   MENU
---------------------- */
 
 .menu {
     display: flex;
-
     flex-direction: column;
-
     gap: 4px;
 }
 
-
 .menu span {
-    width: 7px;
-
-    height: 7px;
-
-    border: 2px solid #714cff;
-
+    width: 8px;
+    height: 8px;
+    border: 2px solid #7452ff;
     border-radius: 50%;
 }
-
 
 /* --------------------
    CONTENT
 --------------------- */
 
 .content {
-    padding:
-        28px
-        27px
-        50px;
+    padding: 26px 26px 42px;
 }
-
 
 /* --------------------
    PROFILE
 --------------------- */
 
 .profile {
-    width: 108px;
-
-    height: 108px;
-
-    margin:
-        0 auto
-        28px;
-
+    width: 106px;
+    height: 106px;
+    margin: 0 auto 30px;
     border-radius: 50%;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
-    background:
-        linear-gradient(
-            135deg,
-            #211a31,
-            #b69a7d
-        );
-
-    color: white;
-
-    font-size: 30px;
-
-    font-weight: bold;
-
-    border:
-        5px solid white;
+    background: linear-gradient(135deg, #4a3a4a, #a78c79);
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    border: 5px solid #f4f4f4;
 }
-
 
 /* --------------------
    STUDENT CARD
 --------------------- */
 
 .student-card {
-    padding: 23px 20px;
-
+    padding: 24px 18px 20px;
     background: #efebff;
-
-    border:
-        3px solid
-        #7452ff;
-
-    border-radius: 16px;
+    border: 2.5px solid #7452ff;
+    border-radius: 18px;
 }
-
 
 .student-card h1 {
-    margin:
-        0 0 20px;
-
-    font-size: 25px;
-
+    margin: 0 0 18px;
+    font-size: 24px;
     font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
 }
-
 
 .row {
     display: grid;
-
-    grid-template-columns:
-        40px
-        1fr;
-
+    grid-template-columns: 34px 1fr;
+    gap: 10px;
     align-items: center;
-
-    margin:
-        13px 0;
-
+    margin: 14px 0;
     font-size: 15px;
+    line-height: 1.35;
 }
 
-
 .row strong {
+    font-weight: 700;
     margin-right: 10px;
 }
 
-
 .icon {
-    font-size: 25px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 
 .study-row {
     display: flex;
-
-    align-items: center;
-
+    align-items: flex-start;
     gap: 10px;
 }
 
+.study-row span {
+    display: inline-block;
+    max-width: 215px;
+}
 
 /* --------------------
    GREEN STATUS CARD
@@ -246,70 +172,49 @@ body {
 
 .status-card {
     margin-top: 28px;
-
-    padding:
-        20px
-        15px
-        23px;
-
+    padding: 28px 16px 24px;
     text-align: center;
-
     background: #b8f3e1;
-
-    border:
-        3px solid
-        #086a4d;
-
-    border-radius: 15px;
-
+    border: 2.5px solid #086a4d;
+    border-radius: 18px;
     color: #100934;
 }
 
-
 .status-card h2 {
-    margin:
-        0 0 5px;
-
-    font-size: 27px;
-
+    margin: 0 0 8px;
+    font-size: 29px;
+    line-height: 1.15;
     font-weight: 500;
+    letter-spacing: -0.03em;
 }
-
 
 .status-card p {
-    margin:
-        0 0 8px;
-
-    font-size: 17px;
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 1.2;
 }
-
 
 .expire {
     display: flex;
-
     justify-content: center;
-
-    gap: 13px;
-
+    gap: 10px;
     font-size: 15px;
+    line-height: 1.2;
 }
 
+.expire strong {
+    font-weight: 700;
+}
 
 /* --------------------
    3 PULSE ANIMATION
 --------------------- */
 
 .status-card.pulse {
-    animation:
-        greenPulse
-        1s
-        ease-in-out
-        3;
+    animation: greenPulse 1s ease-in-out 3;
 }
 
-
 @keyframes greenPulse {
-
     0% {
         background-color: #b8f3e1;
         color: #100934;
@@ -317,16 +222,14 @@ body {
 
     50% {
         background-color: #176f54;
-        color: white;
+        color: #ffffff;
     }
 
     100% {
         background-color: #b8f3e1;
         color: #100934;
     }
-
 }
-
 
 /* --------------------
    CONTROL BUTTON
@@ -334,31 +237,21 @@ body {
 
 .control-button {
     width: 100%;
-
-    height: 60px;
-
+    height: 62px;
     margin-top: 28px;
-
     border: none;
-
-    border-radius: 50px;
-
-    background: #7452ff;
-
-    color: white;
-
+    border-radius: 999px;
+    background: linear-gradient(90deg, #7f5df5, #6e47ff);
+    color: #ffffff;
     font-size: 24px;
-
+    font-weight: 400;
     cursor: pointer;
-
-    transition: 0.2s;
+    transition: transform 0.15s ease;
 }
-
 
 .control-button:active {
     transform: scale(0.98);
 }
-
 
 /* --------------------
    EUROPE BUTTON
@@ -366,59 +259,32 @@ body {
 
 .europe-button {
     width: 100%;
-
     height: 60px;
-
     margin-top: 14px;
-
-    border:
-        3px solid
-        #7452ff;
-
-    border-radius: 50px;
-
+    border: 2.5px solid #7452ff;
+    border-radius: 999px;
     background: transparent;
-
     color: #100934;
-
     font-size: 22px;
-
+    font-weight: 400;
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
-    gap: 20px;
+    gap: 18px;
 }
 
-
-/* --------------------
-   FAKE QR ICON
---------------------- */
-
 .qr {
-    width: 28px;
-
-    height: 28px;
-
+    width: 26px;
+    height: 26px;
     display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
+    grid-template-columns: 1fr 1fr;
     gap: 3px;
 }
 
-
 .qr span {
-    border:
-        2px solid
-        #100934;
-
+    border: 2px solid #100934;
     border-radius: 2px;
 }
-
 
 /* --------------------
    BOTTOM INFO
@@ -426,27 +292,26 @@ body {
 
 .bottom-info {
     margin-top: 30px;
-
     text-align: center;
-
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.5;
 }
-
 
 .bottom-info p {
-    margin: 15px 0;
+    margin: 14px 0;
 }
 
+.bottom-info strong {
+    font-weight: 700;
+}
 
 /* --------------------
    SMALL PHONES
 --------------------- */
 
-@media (max-width: 360px) {
-
+@media (max-width: 390px) {
     .content {
-        padding-left: 18px;
-        padding-right: 18px;
+        padding: 22px 20px 36px;
     }
 
     .student-card h1 {
@@ -454,11 +319,22 @@ body {
     }
 
     .row {
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    .study-row span {
+        max-width: 190px;
     }
 
     .status-card h2 {
-        font-size: 24px;
+        font-size: 26px;
     }
 
+    .control-button {
+        font-size: 22px;
+    }
+
+    .europe-button {
+        font-size: 20px;
+    }
 }
