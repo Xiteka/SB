@@ -39,12 +39,10 @@ body {
    HEADER
 --------------------- */
 .header {
-    min-height: 90px;
-
     padding:
-        calc(18px + env(safe-area-inset-top))
+        calc(env(safe-area-inset-top) + 3px)
         28px
-        15px;
+        8px;
 
     display: flex;
     align-items: center;
