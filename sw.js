@@ -6,8 +6,6 @@ const filesToCache = [
     "./styles.css",
     "./script.js",
     "./manifest.json",
-    "./icon-192.png",
-    "./icon-512.png",
     "./LogoSikt.png",
     "./pic.jpeg",
     "./icon-fodselsdato.png",
