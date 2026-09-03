@@ -58,7 +58,7 @@ body {
 
 
 .logo-img {
-    height: 32px;
+    height: 24px;
     width: auto;
 
     display: block;
@@ -99,16 +99,24 @@ body {
 .profile {
     width: 106px;
     height: 106px;
-    margin: 0 auto 30px;
+
+    margin: 0 auto 20px;
+
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #4a3a4a, #a78c79);
-    color: #ffffff;
-    font-size: 32px;
-    font-weight: 700;
+
+    overflow: hidden;
+
     border: 5px solid #f4f4f4;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 /* --------------------
@@ -116,15 +124,15 @@ body {
 --------------------- */
 
 .student-card {
-    padding: 24px 18px 20px;
+    padding: 18px 16px 1px;
     background: #efebff;
     border: 2.5px solid #7452ff;
-    border-radius: 18px;
+    border-radius: 16px;
 }
 
 .student-card h1 {
-    margin: 0 0 18px;
-    font-size: 24px;
+    margin: 0 0 1px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -0.03em;
@@ -133,7 +141,6 @@ body {
 .row {
     display: grid;
     grid-template-columns: 34px 1fr;
-    gap: 10px;
     align-items: center;
     margin: 14px 0;
     font-size: 15px;
@@ -149,13 +156,12 @@ body {
     font-size: 24px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .study-row {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
 }
 
 .study-row span {
@@ -312,11 +318,11 @@ body {
     }
 
     .student-card h1 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .row {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .study-row span {

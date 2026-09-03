@@ -1,4 +1,4 @@
-const CACHE_NAME = "studentbevis-v3";
+const CACHE_NAME = "studentbevis-v4";
 
 const filesToCache = [
     "./",
@@ -8,7 +8,8 @@ const filesToCache = [
     "./manifest.json",
     "./icon-192.png",
     "./icon-512.png",
-    "./LogoSikt.png"
+    "./LogoSikt.png",
+    "./pic.jpeg"
 ];
 
 
